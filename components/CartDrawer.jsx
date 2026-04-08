@@ -14,6 +14,7 @@ import { formatPrice } from '../lib/currency';
 export default function CartDrawer({ 
   isOpen, 
   onClose, 
+  onCheckout,
   cart, 
   onRemoveItem,
   currency = 'USD'
@@ -102,7 +103,7 @@ export default function CartDrawer({
             </div>
             
             <button
-              onClick={() => onClose()}
+              onClick={onCheckout}
               className="w-full py-4 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-lg font-bold text-lg shadow-xl hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105"
             >
               Checkout Your Nothing

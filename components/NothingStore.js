@@ -255,6 +255,10 @@ export default function NothingStore() {
       <CartDrawer
         isOpen={isCartOpen}
         onClose={() => setIsCartOpen(false)}
+        onCheckout={() => {
+          setIsCartOpen(false);
+          setView('checkout');
+        }}
         cart={cart}
         onRemoveItem={removeFromCart}
         currency={selectedCurrency}

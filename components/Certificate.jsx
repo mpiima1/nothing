@@ -10,7 +10,7 @@
 'use client';
 
 import { useState, useCallback } from 'react';
-import { Download, Check, Star, Shield, Clock } from 'lucide-react';
+import { Download, Check, Star, Shield, Clock, Package } from 'lucide-react';
 import { generateCertificatePDF } from '../lib/pdf';
 import { formatPrice } from '../lib/currency';
 

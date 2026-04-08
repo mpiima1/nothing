@@ -205,7 +205,15 @@ Use Tailwind `animate-` classes, not heavy animation libraries.
 | 7: Features | Microcopy enhancements, sales counter, scarcity badges | Enhanced UX |
 | 8: Deployment | README.md, vercel deploy | Live on Vercel |
 
-**Git commit after each phase:** `git commit -m "phase X"`
+**Git commit after each step:** Every change MUST be committed before proceeding. Use descriptive commit messages following conventional commits format:
+- `feat:` for new functionality
+- `fix:` for bug fixes
+- `refactor:` for code restructuring
+- `docs:` for documentation
+- `style:` for formatting changes
+- `chore:` for maintenance tasks
+
+Example: `git commit -m "feat: add currency formatting with Intl.NumberFormat support"`
 
 ## Testing & Verification
 
