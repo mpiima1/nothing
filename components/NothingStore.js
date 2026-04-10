@@ -23,11 +23,11 @@ import CartDrawer from './CartDrawer';
 import EnhancedButton from './EnhancedButton';
 import Certificate from './Certificate';
 import LanguageSelector from './LanguageSelector';
+import CurrencySelector from './CurrencySelector';
 import { syncLanguage } from '../lib/i18n';
 import '../lib/i18n';
 
 const currencies = getCurrencies();
-const selectedCurrency = process.env.NEXT_PUBLIC_CURRENCY || 'USD';
 
 const PRIMES_100_TO_2000 = [
   101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173,
@@ -62,11 +62,21 @@ export default function NothingStore() {
   const [currentPhoto, setCurrentPhoto] = useState(null);
   const [salesCount, setSalesCount] = useState(null);
   const [mounted, setMounted] = useState(false);
+  const [selectedCurrency, setSelectedCurrency] = useState('USD');
 
   useEffect(() => {
     syncLanguage();
     setSalesCount(PRIMES_100_TO_2000[Math.floor(Math.random() * PRIMES_100_TO_2000.length)]);
     setMounted(true);
+    
+    const storedCurrency = localStorage.getItem('nothing-store-currency');
+    if (storedCurrency && currencies.some(c => c.code === storedCurrency)) {
+      setSelectedCurrency(storedCurrency);
+    }
+  }, []);
+
+  const handleCurrencyChange = useCallback((currencyCode) => {
+    setSelectedCurrency(currencyCode);
   }, []);
 
   const addToCart = useCallback((product) => {
@@ -196,6 +206,7 @@ export default function NothingStore() {
         <div className="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
           <div className="flex items-center gap-4">
             <LanguageSelector />
+            <CurrencySelector onCurrencyChange={handleCurrencyChange} />
             <div>
               <h1 className="text-3xl font-bold">{t('hero.tagline')}</h1>
               <p className="text-sm text-gray-400">Nothing Store</p>
