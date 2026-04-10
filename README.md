@@ -28,6 +28,8 @@ Visit [https://nothing-seven-pi.vercel.app/](https://nothing-seven-pi.vercel.app
 
 ## Environment Variables
 
+**Important:** Never commit actual `.env` files or secrets. Only `.env.local.example` (template) is in the repo.
+
 Copy `.env.local.example` to `.env.local`:
 
 ```env

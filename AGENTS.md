@@ -245,6 +245,7 @@ npm start                  # Production build runs correctly
 - Don't use framer-motion (adds bloating)
 - Don't import external images except via public/
 - Don't use outdated Next.js versions (<16.0.10)
+- **Never commit secrets, keys, or .env files** - only `.env.local.example` template goes in repo
 
 ## Critical Security Fixes
 
