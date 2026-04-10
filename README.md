@@ -84,12 +84,38 @@ npm audit        # Security audit
 
 ## Deployment
 
+This project supports **dual deployment** - both Vercel and GitHub Pages from the same codebase.
+
+### Vercel (Recommended)
+
 Deployed on Vercel. Set environment variables in the Vercel dashboard matching `.env.local.example`.
 
 ```bash
 vercel           # Deploy to preview
 vercel --prod    # Deploy to production
 ```
+
+### GitHub Pages
+
+The repo is configured for GitHub Pages deployment with automatic builds via GitHub Actions.
+
+**URL:** `https://mpiima1.github.io/nothing/`
+
+**One-Time Setup:**
+1. Push code to GitHub
+2. Go to repo **Settings → Pages**
+3. Under "Build and deployment", select **Source: GitHub Actions**
+4. Push to `main` to trigger deployment
+
+**How it works:**
+- The `GITHUB_PAGES=true` environment variable triggers static export mode
+- GitHub Actions builds to the `out/` directory
+- Deploys automatically on every push to `main`
+
+**Manual Trigger:**
+1. Go to **Actions** tab
+2. Select "Deploy to GitHub Pages" workflow
+3. Click **Run workflow**
 
 ## Technical Details
 
