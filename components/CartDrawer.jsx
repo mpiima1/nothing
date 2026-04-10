@@ -8,7 +8,8 @@
 'use client';
 
 import React from 'react';
-import { ShoppingBag, X, Minus, Plus, Trash2, Package } from 'lucide-react';
+import { ShoppingBag, X, Trash2, Package } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { formatPrice } from '../lib/currency';
 
 export default function CartDrawer({ 
@@ -19,6 +20,7 @@ export default function CartDrawer({
   onRemoveItem,
   currency = 'USD'
 }) {
+  const { t } = useTranslation();
   const total = cart.reduce((sum, item) => sum + item.price, 0);
   
   if (!isOpen) return null;
@@ -32,11 +34,11 @@ export default function CartDrawer({
       />
       
       {/* Drawer */}
-      <div className="relative bg-slate-900 w-full max-w-md h-full shadow-2xl border-l border-white/10 animate-slide-in">
+      <div className="relative bg-slate-900 w-full max-w-md h-full shadow-2xl border-l border-white/10 animate-slide-in flex flex-col">
         {/* Header */}
-        <div className="p-6 border-b border-white/10 flex justify-between items-center">
-          <h2 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-            Your Cart
+        <div className="p-4 md:p-6 border-b border-white/10 flex justify-between items-center shrink-0">
+          <h2 className="text-xl md:text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+            {t('cart.title')}
           </h2>
           <button
             onClick={onClose}
@@ -47,15 +49,15 @@ export default function CartDrawer({
         </div>
         
         {/* Cart Items */}
-        <div className="p-6 space-y-4">
+        <div className="p-4 md:p-6 space-y-3 md:space-y-4 flex-1 overflow-y-auto">
           {cart.length === 0 ? (
             <div className="text-center py-12">
               <Package size={64} className="mx-auto mb-4 text-gray-600" />
               <p className="text-gray-400">
-                Your cart is as empty as your purchase
+                {t('cart.empty')}
               </p>
               <p className="text-sm text-gray-500 mt-2">
-                Add some nothing to get started
+                {t('cart.emptySubtext')}
               </p>
             </div>
           ) : (
@@ -69,9 +71,9 @@ export default function CartDrawer({
                     <ShoppingBag size={20} className="text-purple-400" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-white">{item.name}</h4>
+                    <h4 className="font-semibold text-white">{t(`products.${item.id}.name`)}</h4>
                     <p className="text-sm text-purple-400">
-                      {formatPrice(item.price, currency)} each
+                      {formatPrice(item.price, currency)} {t('common.each')}
                     </p>
                   </div>
                 </div>
@@ -94,23 +96,23 @@ export default function CartDrawer({
         
         {/* Footer */}
         {cart.length > 0 && (
-          <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-white/10 bg-gradient-to-t from-slate-900 via-slate-900 to-transparent">
-            <div className="flex justify-between items-center mb-4">
-              <span className="text-gray-400">Total:</span>
-              <span className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <div className="shrink-0 p-4 md:p-6 border-t border-white/10 bg-slate-900">
+            <div className="flex justify-between items-center mb-3 md:mb-4">
+              <span className="text-gray-400">{t('common.total')}:</span>
+              <span className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                 {formatPrice(total, currency)}
               </span>
             </div>
             
             <button
               onClick={onCheckout}
-              className="w-full py-4 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-lg font-bold text-lg shadow-xl hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105"
+              className="w-full py-3 md:py-4 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-lg font-bold text-base md:text-lg shadow-xl hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105"
             >
-              Checkout Your Nothing
+              {t('cart.checkoutYourNothing')}
             </button>
             
-            <p className="text-xs text-gray-500 text-center mt-3">
-              No payment required. Nothing detected.
+            <p className="text-xs text-gray-500 text-center mt-2 md:mt-3">
+              {t('cart.noPaymentRequired')}
             </p>
           </div>
         )}

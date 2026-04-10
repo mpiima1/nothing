@@ -36,6 +36,7 @@ Visit [https://s7ty3.com/](https://s7ty3.com/)
 
 **Important:** Never commit actual `.env` files or secrets. Only `.env.local.example` (template) is in the repo.
 
+
 Copy `.env.local.example` to `.env.local`:
 
 ```env

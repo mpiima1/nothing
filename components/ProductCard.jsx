@@ -10,13 +10,19 @@
 'use client';
 
 import React from 'react';
-import { Package, Plus, Minus, ShoppingCart, Check } from 'lucide-react';
+import { Package, Check } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import { formatPrice } from '../lib/currency';
 
 export default function ProductCard({ 
   product, 
   onAddToCart, 
+  currency = 'USD',
   inCart = false 
 }) {
+  const { t } = useTranslation();
+  const productKey = `products.${product.id}`;
+  
   return (
     <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 hover:border-purple-500 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
       <div className="flex justify-between items-start mb-4">
@@ -24,20 +30,20 @@ export default function ProductCard({
           <Package size={28} className="text-purple-400" />
         </div>
         <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-          {product.price}
+          {formatPrice(product.price, currency)}
         </div>
       </div>
       
       <h3 className="text-xl font-bold mb-2 text-white">
-        {product.name}
+        {t(`${productKey}.name`)}
       </h3>
       
       <p className="text-gray-300 mb-4 text-sm">
-        {product.description}
+        {t(`${productKey}.description`)}
       </p>
       
       <ul className="mb-6 space-y-2">
-        {product.features.map((feature, idx) => (
+        {t(`${productKey}.features`, { returnObjects: true }).map((feature, idx) => (
           <li key={idx} className="flex items-start text-xs text-gray-400">
             <span className="text-green-400 mr-2">✓</span>
             {feature}
@@ -57,19 +63,19 @@ export default function ProductCard({
         {inCart ? (
           <>
             <Check size={18} />
-            Added to Cart
+            {t('common.addedToCart')}
           </>
         ) : (
           <>
-            <Plus size={18} />
-            Add to Cart
+            <Package size={18} />
+            {t('common.addToCart')}
           </>
         )}
       </button>
       
       <div className="mt-4 text-center">
         <span className="text-xs text-gray-500">
-          Limited stock: ∞
+          {t('products.limitedStock')}
         </span>
       </div>
     </div>

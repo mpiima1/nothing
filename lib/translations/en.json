@@ -1,0 +1,110 @@
+{
+  "common": {
+    "addToCart": "Add to Cart",
+    "addedToCart": "Added to Cart",
+    "cart": "Cart",
+    "checkout": "Checkout",
+    "back": "Back",
+    "backToStore": "Back to Store",
+    "processing": "Processing...",
+    "complete": "Complete",
+    "total": "Total",
+    "verified": "Verified",
+    "authentic": "Authentic",
+    "purchased": "Purchased",
+    "value": "Value",
+    "orderNumber": "Order #",
+    "items": "item(s)",
+    "each": "each"
+  },
+  "hero": {
+    "title": "Buy Absolutely Nothing",
+    "subtitle": "The revolutionary e-commerce platform selling what you never knew you needed.",
+    "tagline": "Premium Nothing. Delivered.",
+    "description": "This is not a scam. This is performance art. This is social commentary. This is your chance to own a piece of conceptual absurdity. 100% transparent. 100% nothing."
+  },
+  "products": {
+    "salesCounter": "{{count}} Nothings Sold Today",
+    "chooseYourNothing": "Choose Your Nothing",
+    "premium": {
+      "name": "Premium Nothing",
+      "description": "Our flagship product. Absolutely nothing, but make it premium.",
+      "features": ["100% invisible", "Zero calories", "Infinite shelf life", "Hypoallergenic"]
+    },
+    "deluxe": {
+      "name": "Deluxe Nothing",
+      "description": "Nothing, but fancier. For the discerning consumer.",
+      "features": ["Artisanal emptiness", "Hand-crafted void", "Limited edition", "Certificate of authenticity"]
+    },
+    "ultimate": {
+      "name": "Ultimate Nothing",
+      "description": "The apex of nothingness. Pure absence in its final form.",
+      "features": ["Quantum-grade vacuum", "Philosophical implications included", "VIP nothing experience", "Personalized photo shoot"]
+    },
+    "starter": {
+      "name": "Starter Nothing",
+      "description": "Perfect for nothing beginners. Dip your toes into the void.",
+      "features": ["Entry-level emptiness", "Digital certificate", "Instagram-worthy", "Great conversation starter"]
+    },
+    "limitedStock": "Limited stock: ∞"
+  },
+  "cart": {
+    "title": "Your Cart",
+    "empty": "Your cart is as empty as your purchase",
+    "emptySubtext": "Add some nothing to get started",
+    "checkoutYourNothing": "Checkout Your Nothing",
+    "noPaymentRequired": "No payment required. Nothing detected."
+  },
+  "checkout": {
+    "title": "Checkout",
+    "yourNothing": "Your Nothing",
+    "fullName": "Full Name",
+    "namePlaceholder": "John Doe",
+    "email": "Email",
+    "emailPlaceholder": "john@example.com",
+    "disclaimer": "By proceeding, you acknowledge that you are literally purchasing NOTHING. No physical or digital product will be delivered except a certificate and photo documentation. This is performance art / social experiment. All sales are final because... well, there's nothing to return.",
+    "disclaimerTitle": "Legal Disclaimer",
+    "completePurchase": "Complete Purchase of Nothing"
+  },
+  "certificate": {
+    "congratulations": "Congratulations!",
+    "purchased": "You have purchased absolutely nothing",
+    "download": "Download PDF Certificate",
+    "downloaded": "Certificate Downloaded!",
+    "downloadHint": "Download your official proof of purchase. Includes [ NOTHING CAPTURED ].",
+    "printedHint": "Your certificate is ready. Print it on transparent paper for authenticity.",
+    "orderSummary": "Order Summary",
+    "purchasedBy": "Purchased by",
+    "emailLabel": "Email"
+  },
+  "footer": {
+    "tagline": "The Nothing Store - A bold experiment in absurdist capitalism",
+    "legal": "All purchases are non-refundable (obviously). You are literally buying nothing. This is 100% transparent. Proceeds will fund the creator's next big idea. Thank you for being part of something beautifully meaningless.",
+    "copyright": "© 2024 Nothing Store. All rights (to nothing) reserved."
+  },
+  "photos": {
+    "packaging": "Your Nothing being carefully packaged",
+    "qualityControl": "Quality control inspection of your Nothing",
+    "facility": "Your Nothing in our state-of-the-art facility",
+    "shipping": "Final preparations before shipping your Nothing",
+    "security": "Your Nothing passing through security"
+  },
+  "pdf": {
+    "title": "CERTIFICATE OF NOTHING",
+    "subtitle": "This certifies that the distinguished",
+    "acquired": "has successfully acquired",
+    "orderNumber": "Order Number",
+    "date": "Date",
+    "amount": "Amount",
+    "captured": "[ NOTHING CAPTURED ]",
+    "aLotOfNothing": "A lot of Nothing",
+    "disclaimer": [
+      "This certificate confirms the purchase of absolutely nothing.",
+      "For legal purposes, this document acknowledges nothing was received.",
+      "All rights to nothing are reserved. The Nothing Store is not responsible for emptiness.",
+      "This certificate is printed on premium virtual paper. Nothing physical will be shipped."
+    ],
+    "storeName": "The Nothing Store",
+    "tagline": "Premium Nothing Since Today"
+  }
+}

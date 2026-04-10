@@ -1,0 +1,110 @@
+{
+  "common": {
+    "addToCart": "In den Warenkorb",
+    "addedToCart": "Hinzugefügt",
+    "cart": "Warenkorb",
+    "checkout": "Zur Kasse",
+    "back": "Zurück",
+    "backToStore": "Zurück zum Shop",
+    "processing": "Verarbeitung...",
+    "complete": "Abschließen",
+    "total": "Gesamt",
+    "verified": "Verifiziert",
+    "authentic": "Echt",
+    "purchased": "Gekauft",
+    "value": "Wert",
+    "orderNumber": "Bestellung #",
+    "items": "Artikel",
+    "each": "je"
+  },
+  "hero": {
+    "title": "Kaufen Sie Absolut Nichts",
+    "subtitle": "Die revolutionäre E-Commerce-Plattform, die verkauft, was Sie nie wussten, dass Sie es brauchten.",
+    "tagline": "Premium Nichts. Geliefert.",
+    "description": "Dies ist kein Betrug. Dies ist Performancekunst. Dies ist Gesellschaftskommentar. Dies ist Ihre Chance, ein Stück konzeptuellen Unsinn zu besitzen. 100% transparent. 100% nichts."
+  },
+  "products": {
+    "salesCounter": "{{count}} Nichts Heute Verkauft",
+    "chooseYourNothing": "Wählen Sie Ihr Nichts",
+    "premium": {
+      "name": "Premium Nichts",
+      "description": "Unser Flaggschiffprodukt. Absolut nichts, aber mach es premium.",
+      "features": ["100% unsichtbar", "Null Kalorien", "Unbegrenzte Haltbarkeit", "Hypoallergen"]
+    },
+    "deluxe": {
+      "name": "Deluxe Nichts",
+      "description": "Nichts, aber eleganter. Für den anspruchsvollen Kunden.",
+      "features": ["Handwerkliche Leere", "Handgefertigtes Vakuum", "Limitierte Auflage", "Echtheitszertifikat"]
+    },
+    "ultimate": {
+      "name": "Ultimate Nichts",
+      "description": "Der Gipfel der Nichtigkeit. Reine Abwesenheit in ihrer endgültigen Form.",
+      "features": ["Quantenqualitäts-Vakuum", "Philosophische Implikationen inklusive", "VIP-Nichts-Erlebnis", "Persönliches Fotoshooting"]
+    },
+    "starter": {
+      "name": "Starter Nichts",
+      "description": "Perfekt für Nichts-Anfänger. Tauchen Sie in die Leere ein.",
+      "features": ["Einsteiger-Leere", "Digitales Zertifikat", "Instagram-würdig", "Toller Gesprächsstoff"]
+    },
+    "limitedStock": "Begrenzter Bestand: ∞"
+  },
+  "cart": {
+    "title": "Ihr Warenkorb",
+    "empty": "Ihr Warenkorb ist so leer wie Ihr Kauf",
+    "emptySubtext": "Fügen Sie etwas Nichts hinzu, um zu beginnen",
+    "checkoutYourNothing": "Nichts Zur Kasse",
+    "noPaymentRequired": "Keine Zahlung erforderlich. Nichts erkannt."
+  },
+  "checkout": {
+    "title": "Kasse",
+    "yourNothing": "Ihr Nichts",
+    "fullName": "Vollständiger Name",
+    "namePlaceholder": "Max Mustermann",
+    "email": "E-Mail",
+    "emailPlaceholder": "max@beispiel.de",
+    "disclaimer": "Mit dem Fortfahren bestätigen Sie, dass Sie buchstäblich NICHTS kaufen. Es wird kein physisches oder digitales Produkt geliefert außer einem Zertifikat und Fotodokumentation. Dies ist Performancekunst / soziales Experiment. Alle Verkäufe sind endgültig, weil... nun ja, es gibt nichts zu zurückzugeben.",
+    "disclaimerTitle": "Rechtlicher Hinweis",
+    "completePurchase": "Nichts-Kauf Abschließen"
+  },
+  "certificate": {
+    "congratulations": "Herzlichen Glückwunsch!",
+    "purchased": "Sie haben absolut nichts gekauft",
+    "download": "PDF-Zertifikat Herunterladen",
+    "downloaded": "Zertifikat Heruntergeladen!",
+    "downloadHint": "Laden Sie Ihren offiziellen Kaufbeleg herunter. Enthält [ NOTHING CAPTURED ].",
+    "printedHint": "Ihr Zertifikat ist bereit. Drucken Sie es auf transparentem Papier für Echtheit.",
+    "orderSummary": "Bestellübersicht",
+    "purchasedBy": "Gekauft von",
+    "emailLabel": "E-Mail"
+  },
+  "footer": {
+    "tagline": "Nothing Store - Ein kühnes Experiment im absurden Kapitalismus",
+    "legal": "Alle Käufe sind nicht erstattungsfähig (offensichtlich). Sie kaufen buchstäblich nichts. Dies ist 100% transparent. Die Einnahmen werden die nächste große Idee des Erstellers finanzieren. Vielen Dank, dass Sie Teil von etwas sind, das schön bedeutungslos ist.",
+    "copyright": "© 2024 Nothing Store. Alle Rechte (an nichts) vorbehalten."
+  },
+  "photos": {
+    "packaging": "Ihr Nichts wird sorgfältig verpackt",
+    "qualityControl": "Qualitätskontrolle Ihres Nichts",
+    "facility": "Ihr Nichts in unserer hochmodernen Anlage",
+    "shipping": "Endvorbereitungen vor dem Versand Ihres Nichts",
+    "security": "Ihr Nichts durchläuft die Sicherheitskontrolle"
+  },
+  "pdf": {
+    "title": "ZERTIFIKAT FÜR NICHTS",
+    "subtitle": "Hiermit wird bescheinigt, dass der/die distinguierte",
+    "acquired": "hat erfolgreich erworben",
+    "orderNumber": "Bestellnummer",
+    "date": "Datum",
+    "amount": "Betrag",
+    "captured": "[ NICHTS ERFASST ]",
+    "aLotOfNothing": "Eine Menge Nichts",
+    "disclaimer": [
+      "Dieses Zertifikat bestätigt den Kauf von absolut nichts.",
+      "Zu rechtlichen Zwecken bestätigt dieses Dokument, dass nichts empfangen wurde.",
+      "Alle Rechte an nichts sind vorbehalten. Nothing Store übernimmt keine Verantwortung für Leere.",
+      "Dieses Zertifikat ist auf hochwertigem virtuellem Papier gedruckt. Es wird nichts Physisches versandt."
+    ],
+    "storeName": "Nothing Store",
+    "tagline": "Premium Nichts Seit Heute"
+  }
+}

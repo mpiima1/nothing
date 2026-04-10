@@ -11,25 +11,28 @@
 
 import { useState, useCallback } from 'react';
 import { Download, Check, Star, Shield, Clock, Package } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import i18n from '../lib/i18n';
 import { generateCertificatePDF } from '../lib/pdf';
 import { formatPrice } from '../lib/currency';
 
 export default function Certificate({ order, currency = 'USD' }) {
+  const { t } = useTranslation();
   const [downloaded, setDownloaded] = useState(false);
+  const language = i18n.language || 'en';
   
-  // Generate random photo for visual
   const photo = {
     bg: 'bg-gradient-to-br from-purple-400 to-pink-500',
-    text: 'Your Nothing being carefully packaged'
+    text: t('photos.packaging')
   };
   
   const handleDownload = useCallback(() => {
-    const doc = generateCertificatePDF(order, currency);
+    const doc = generateCertificatePDF(order, currency, language);
     const fileName = `NOTHING-CERTIFICATE-${order.orderId}.pdf`;
     doc.save(fileName);
     setDownloaded(true);
     setTimeout(() => setDownloaded(false), 3000);
-  }, [order, currency]);
+  }, [order, currency, language]);
   
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white p-8">
@@ -40,10 +43,10 @@ export default function Certificate({ order, currency = 'USD' }) {
             <Check size={48} />
           </div>
           <h1 className="text-4xl font-bold mb-4">
-            Congratulations!
+            {t('certificate.congratulations')}
           </h1>
           <p className="text-xl text-gray-300">
-            You have purchased absolutely nothing
+            {t('certificate.purchased')}
           </p>
         </div>
         
@@ -57,7 +60,7 @@ export default function Certificate({ order, currency = 'USD' }) {
               </h3>
               <div className="inline-block px-6 py-2 bg-white/20 backdrop-blur rounded-full">
                 <span className="text-sm">
-                  Order #{order.orderId}
+                  {t('common.orderNumber')}{order.orderId}
                 </span>
               </div>
             </div>
@@ -67,17 +70,17 @@ export default function Certificate({ order, currency = 'USD' }) {
             <div className="bg-black/20 p-4 rounded-lg text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Check size={16} className="text-green-400" />
-                <span className="text-sm text-gray-400">Verified</span>
+                <span className="text-sm text-gray-400">{t('common.verified')}</span>
               </div>
               <p className="text-sm text-white">
-                {order.items[0]?.name || 'Nothing'}
+                {t(`products.${order.items[0]?.id}.name`) || 'Nothing'}
               </p>
             </div>
             
             <div className="bg-black/20 p-4 rounded-lg text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Shield size={16} className="text-blue-400" />
-                <span className="text-sm text-gray-400">Authentic</span>
+                <span className="text-sm text-gray-400">{t('common.authentic')}</span>
               </div>
               <p className="text-sm text-white">
                 {order.orderId}
@@ -87,7 +90,7 @@ export default function Certificate({ order, currency = 'USD' }) {
             <div className="bg-black/20 p-4 rounded-lg text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Clock size={16} className="text-purple-400" />
-                <span className="text-sm text-gray-400">Purchased</span>
+                <span className="text-sm text-gray-400">{t('common.purchased')}</span>
               </div>
               <p className="text-sm text-white">
                 {order.date}
@@ -97,7 +100,7 @@ export default function Certificate({ order, currency = 'USD' }) {
             <div className="bg-black/20 p-4 rounded-lg text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Star size={16} className="text-yellow-400" />
-                <span className="text-sm text-gray-400">Value</span>
+                <span className="text-sm text-gray-400">{t('common.value')}</span>
               </div>
               <p className="text-sm text-white">
                 {formatPrice(parseFloat(order.total), currency)}
@@ -116,48 +119,48 @@ export default function Certificate({ order, currency = 'USD' }) {
             {downloaded ? (
               <>
                 <Check size={24} />
-                Certificate Downloaded!
+                {t('certificate.downloaded')}
               </>
             ) : (
               <>
                 <Download size={24} />
-                Download PDF Certificate
+                {t('certificate.download')}
               </>
             )}
           </button>
           
           <p className="mt-4 text-sm text-gray-400">
             {downloaded 
-              ? "Your certificate is ready. Print it on transparent paper for authenticity."
-              : "Download your official proof of purchase. Includes [ NOTHING CAPTURED ]."
+              ? t('certificate.printedHint')
+              : t('certificate.downloadHint')
             }
           </p>
         </div>
         
         {/* Order Summary */}
         <div className="bg-white/5 rounded-lg p-6 border border-white/10">
-          <h3 className="text-xl font-bold mb-4">Order Summary</h3>
+          <h3 className="text-xl font-bold mb-4">{t('certificate.orderSummary')}</h3>
           
           <div className="space-y-2 mb-4">
             <div className="flex justify-between text-sm">
-              <span className="text-gray-400">Purchased by:</span>
+              <span className="text-gray-400">{t('certificate.purchasedBy')}:</span>
               <span className="text-white font-semibold">{order.name}</span>
             </div>
             
             <div className="flex justify-between text-sm">
-              <span className="text-gray-400">Email:</span>
+              <span className="text-gray-400">{t('certificate.emailLabel')}:</span>
               <span className="text-white">{order.email}</span>
             </div>
             
             <div className="flex justify-between text-sm">
-              <span className="text-gray-400">Items:</span>
+              <span className="text-gray-400">{t('common.items')}:</span>
               <span className="text-white">
-                {order.items.length} item(s)
+                {order.items.length} {t('common.items')}
               </span>
             </div>
             
             <div className="flex justify-between text-sm pt-2 border-t border-white/10">
-              <span className="text-gray-400">Total:</span>
+              <span className="text-gray-400">{t('common.total')}:</span>
               <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                 {formatPrice(parseFloat(order.total), currency)}
               </span>
@@ -166,7 +169,7 @@ export default function Certificate({ order, currency = 'USD' }) {
           
           <div className="text-center bg-purple-500/20 p-3 rounded-lg mt-6">
             <span className="text-sm text-purple-300">
-              <strong>[ NOTHING CAPTURED ]</strong>
+              <strong>{t('certificate.captured')}</strong>
             </span>
           </div>
         </div>
