@@ -58,29 +58,29 @@ export default function CurrencySelector({ onCurrencyChange }) {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-3 py-2 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-lg border border-white/20 transition-all duration-200 text-sm font-medium"
+        className="flex items-center gap-1 px-2 py-1.5 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-lg border border-white/20 transition-all duration-200 text-sm font-medium"
       >
-        <DollarSign size={16} className="text-green-400" />
-        <span>{activeCurrency.symbol} {activeCurrency.code}</span>
+        <DollarSign size={14} className="text-green-400" />
+        <span>{activeCurrency.code}</span>
         <ChevronDown 
-          size={14} 
+          size={12} 
           className={`text-gray-400 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
         />
       </button>
 
       {isOpen && (
-        <div className="fixed top-auto left-0 mt-2 w-48 bg-slate-900/95 backdrop-blur-lg rounded-lg border border-white/20 shadow-xl overflow-hidden z-[100] animate-fade-in">
+        <div className="fixed top-auto left-0 mt-2 w-32 bg-slate-900/95 backdrop-blur-lg rounded-lg border border-white/20 shadow-xl overflow-hidden z-[100] animate-fade-in">
           {supportedCurrencies.map((currency) => (
             <button
               key={currency.code}
               onClick={() => handleSelect(currency)}
-              className={`w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-white/10 transition-colors ${
+              className={`w-full flex items-center gap-3 px-3 py-2 text-left hover:bg-white/10 transition-colors ${
                 activeCurrency.code === currency.code ? 'bg-green-500/20' : ''
               }`}
             >
               <span className="text-lg">{currency.flag}</span>
               <span className={activeCurrency.code === currency.code ? 'text-green-300 font-semibold' : 'text-white'}>
-                {currency.name}
+                {currency.code}
               </span>
               {activeCurrency.code === currency.code && (
                 <span className="ml-auto text-green-400">✓</span>

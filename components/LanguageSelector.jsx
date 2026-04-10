@@ -68,29 +68,29 @@ export default function LanguageSelector() {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-3 py-2 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-lg border border-white/20 transition-all duration-200 text-sm font-medium"
+        className="flex items-center gap-1 px-2 py-1.5 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-lg border border-white/20 transition-all duration-200 text-sm font-medium"
       >
-        <Globe size={16} className="text-purple-300" />
-        <span>{activeLang.flag} {activeLang.code.toUpperCase()}</span>
+        <Globe size={14} className="text-purple-300" />
+        <span>{activeLang.code.toUpperCase()}</span>
         <ChevronDown 
-          size={14} 
+          size={12} 
           className={`text-gray-400 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
         />
       </button>
 
       {isOpen && (
-        <div className="fixed top-auto left-0 mt-2 w-48 bg-slate-900/95 backdrop-blur-lg rounded-lg border border-white/20 shadow-xl overflow-hidden z-[100] animate-fade-in">
+        <div className="fixed top-auto left-0 mt-2 w-32 bg-slate-900/95 backdrop-blur-lg rounded-lg border border-white/20 shadow-xl overflow-hidden z-[100] animate-fade-in">
           {supportedLanguages.map((lang) => (
             <button
               key={lang.code}
               onClick={() => handleSelect(lang)}
-              className={`w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-white/10 transition-colors ${
+              className={`w-full flex items-center gap-3 px-3 py-2 text-left hover:bg-white/10 transition-colors ${
                 activeLang.code === lang.code ? 'bg-purple-500/20' : ''
               }`}
             >
               <span className="text-lg">{lang.flag}</span>
               <span className={activeLang.code === lang.code ? 'text-purple-300 font-semibold' : 'text-white'}>
-                {lang.name}
+                {lang.code.toUpperCase()}
               </span>
               {activeLang.code === lang.code && (
                 <span className="ml-auto text-purple-400">✓</span>
