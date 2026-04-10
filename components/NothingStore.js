@@ -212,7 +212,7 @@ export default function NothingStore() {
 
           {/* Center: Title (shows from sm, shrinks, hides when no space) */}
           <div className="hidden sm:flex flex-1 justify-center min-w-0 overflow-hidden transition-all duration-300">
-            <div className="text-center whitespace-nowrap">
+            <div className="text-left whitespace-nowrap">
               <h1 className="text-sm sm:text-base md:text-lg lg:text-2xl xl:text-3xl font-bold">{t('hero.tagline')}</h1>
               <p className="text-xs sm:text-sm text-gray-400">Nothing Store</p>
             </div>
