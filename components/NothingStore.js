@@ -203,23 +203,23 @@ export default function NothingStore() {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
       {/* Header */}
       <header className="border-b border-white/10 backdrop-blur-lg sticky top-0 z-50 bg-slate-900/50">
-        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-8 py-3 md:py-6 flex justify-between items-center">
-          {/* Mobile: Language + Currency | Desktop: Left column - same height as cart */}
-          <div className="flex items-center gap-2">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-8 py-3 md:py-6 flex justify-between items-center gap-2 md:gap-4">
+          {/* Left: Language + Currency (flex-1 to fill available space) */}
+          <div className="flex items-center gap-2 md:gap-3 flex-shrink-0">
             <LanguageSelector />
             <CurrencySelector onCurrencyChange={handleCurrencyChange} />
           </div>
 
-          {/* Desktop: Center title (hidden on mobile) - text left-aligned */}
-          <div className="hidden lg:flex justify-center absolute left-1/2 transform -translate-x-1/2" style={{ left: '50%' }}>
-            <div className="text-left">
+          {/* Center: Title (flex grow, hides when no space) */}
+          <div className="hidden lg:flex flex-1 justify-center min-w-0 overflow-hidden">
+            <div className="text-center whitespace-nowrap">
               <h1 className="text-2xl lg:text-3xl font-bold">{t('hero.tagline')}</h1>
               <p className="text-sm text-gray-400">Nothing Store</p>
             </div>
           </div>
 
-          {/* Cart button */}
-          <div className="flex items-center gap-2">
+          {/* Right: Cart button (flex-shrink:0 to never shrink) */}
+          <div className="flex items-center gap-2 flex-shrink-0">
             <div className="sm:hidden">
               <EnhancedButton
                 variant="primary"
