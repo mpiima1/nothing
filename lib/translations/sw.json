@@ -88,5 +88,23 @@
     "facility": "Hakuna Kitu yako katika kituo chetu cha kisasa",
     "shipping": "Maandalizi ya mwisho kabla ya kusafirisha Hakuna Kitu yako",
     "security": "Hakuna Kitu yako ikipita usalama"
+  },
+  "pdf": {
+    "title": "CHETI CHA TUP",
+    "subtitle": "Hii inathibitisha kwamba mpenzi",
+    "acquired": "amefanikiwa kununua",
+    "orderNumber": "Nambari ya Oda",
+    "date": "Tarehe",
+    "amount": "Kiasi",
+    "captured": "[ TUPU IMESAMBATIZWA ]",
+    "aLotOfNothing": "Tupu Nyingi",
+    "disclaimer": [
+      "Cheti hiki kinathibitisha ununuzi wa hakuna kitu kabisa.",
+      "Kwa madhumuni ya kisheria, hati hii inakubali kwamba hakuna kitu kilichopokelewa.",
+      "Haki zote za tupu zimehifadhiwa. Nothing Store hairipoti kwa tupu.",
+      "Cheti hiki kimechapishwa kwa karatasi ya ubora ya virtual. Hakuna kitu cha mwili kitatumwa."
+    ],
+    "storeName": "Nothing Store",
+    "tagline": "Hakuna Kitu Bora Tangu Leo"
   }
 }

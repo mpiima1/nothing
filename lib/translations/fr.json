@@ -88,5 +88,23 @@
     "facility": "Votre Rien dans notre installation de pointe",
     "shipping": "Dernières préparations avant l'expédition de votre Rien",
     "security": "Votre Rien passant par la sécurité"
+  },
+  "pdf": {
+    "title": "CERTIFICAT DE RIEN",
+    "subtitle": "Ceci certifie que le distingué",
+    "acquired": "a acquis avec succès",
+    "orderNumber": "Numéro de Commande",
+    "date": "Date",
+    "amount": "Montant",
+    "captured": "[ RIEN CAPTURÉ ]",
+    "aLotOfNothing": "Beaucoup de Rien",
+    "disclaimer": [
+      "Ce certificat confirme l'achat d'absolument rien.",
+      "À des fins juridiques, ce document reconnaît qu'il n'a rien été reçu.",
+      "Tous les droits sur rien sont réservés. Nothing Store n'est pas responsable du vide.",
+      "Ce certificat est imprimé sur du papier virtuel premium. Rien de physique ne sera expédié."
+    ],
+    "storeName": "Nothing Store",
+    "tagline": "Rien Premium Depuis Aujourd'hui"
   }
 }

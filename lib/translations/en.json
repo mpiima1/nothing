@@ -88,5 +88,23 @@
     "facility": "Your Nothing in our state-of-the-art facility",
     "shipping": "Final preparations before shipping your Nothing",
     "security": "Your Nothing passing through security"
+  },
+  "pdf": {
+    "title": "CERTIFICATE OF NOTHING",
+    "subtitle": "This certifies that the distinguished",
+    "acquired": "has successfully acquired",
+    "orderNumber": "Order Number",
+    "date": "Date",
+    "amount": "Amount",
+    "captured": "[ NOTHING CAPTURED ]",
+    "aLotOfNothing": "A lot of Nothing",
+    "disclaimer": [
+      "This certificate confirms the purchase of absolutely nothing.",
+      "For legal purposes, this document acknowledges nothing was received.",
+      "All rights to nothing are reserved. The Nothing Store is not responsible for emptiness.",
+      "This certificate is printed on premium virtual paper. Nothing physical will be shipped."
+    ],
+    "storeName": "The Nothing Store",
+    "tagline": "Premium Nothing Since Today"
   }
 }

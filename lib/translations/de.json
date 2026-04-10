@@ -88,5 +88,23 @@
     "facility": "Ihr Nichts in unserer hochmodernen Anlage",
     "shipping": "Endvorbereitungen vor dem Versand Ihres Nichts",
     "security": "Ihr Nichts durchläuft die Sicherheitskontrolle"
+  },
+  "pdf": {
+    "title": "ZERTIFIKAT FÜR NICHTS",
+    "subtitle": "Hiermit wird bescheinigt, dass der/die distinguierte",
+    "acquired": "hat erfolgreich erworben",
+    "orderNumber": "Bestellnummer",
+    "date": "Datum",
+    "amount": "Betrag",
+    "captured": "[ NICHTS ERFASST ]",
+    "aLotOfNothing": "Eine Menge Nichts",
+    "disclaimer": [
+      "Dieses Zertifikat bestätigt den Kauf von absolut nichts.",
+      "Zu rechtlichen Zwecken bestätigt dieses Dokument, dass nichts empfangen wurde.",
+      "Alle Rechte an nichts sind vorbehalten. Nothing Store übernimmt keine Verantwortung für Leere.",
+      "Dieses Zertifikat ist auf hochwertigem virtuellem Papier gedruckt. Es wird nichts Physisches versandt."
+    ],
+    "storeName": "Nothing Store",
+    "tagline": "Premium Nichts Seit Heute"
   }
 }

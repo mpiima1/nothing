@@ -12,12 +12,14 @@
 import { useState, useCallback } from 'react';
 import { Download, Check, Star, Shield, Clock, Package } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import i18n from '../lib/i18n';
 import { generateCertificatePDF } from '../lib/pdf';
 import { formatPrice } from '../lib/currency';
 
 export default function Certificate({ order, currency = 'USD' }) {
   const { t } = useTranslation();
   const [downloaded, setDownloaded] = useState(false);
+  const language = i18n.language || 'en';
   
   const photo = {
     bg: 'bg-gradient-to-br from-purple-400 to-pink-500',
@@ -25,12 +27,12 @@ export default function Certificate({ order, currency = 'USD' }) {
   };
   
   const handleDownload = useCallback(() => {
-    const doc = generateCertificatePDF(order, currency);
+    const doc = generateCertificatePDF(order, currency, language);
     const fileName = `NOTHING-CERTIFICATE-${order.orderId}.pdf`;
     doc.save(fileName);
     setDownloaded(true);
     setTimeout(() => setDownloaded(false), 3000);
-  }, [order, currency]);
+  }, [order, currency, language]);
   
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white p-8">

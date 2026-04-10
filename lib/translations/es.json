@@ -88,5 +88,23 @@
     "facility": "Tu Nada en nuestra instalación de última generación",
     "shipping": "Preparativos finales antes de enviar Tu Nada",
     "security": "Tu Nada pasando por seguridad"
+  },
+  "pdf": {
+    "title": "CERTIFICADO DE NADA",
+    "subtitle": "Esto certifica que el distinguido",
+    "acquired": "ha adquirido exitosamente",
+    "orderNumber": "Número de Pedido",
+    "date": "Fecha",
+    "amount": "Importe",
+    "captured": "[ NADA CAPTURADO ]",
+    "aLotOfNothing": "Mucha Nada",
+    "disclaimer": [
+      "Este certificado confirma la compra de absolutamente nada.",
+      "Con fines legales, este documento reconoce que no se recibió nada.",
+      "Todos los derechos sobre nada están reservados. Nothing Store no se hace responsable del vacío.",
+      "Este certificado está impreso en papel virtual premium. No se enviará nada físico."
+    ],
+    "storeName": "Nothing Store",
+    "tagline": "Nada Premium Desde Hoy"
   }
 }
