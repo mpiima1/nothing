@@ -45,6 +45,7 @@ NEXT_PUBLIC_CURRENCY_SYMBOL="$"     # Auto-mapped based on currency
 NEXT_PUBLIC_PRODUCT_VARIANTS="premium,deluxe,ultimate,start"
 NEXT_PUBLIC_DEMO_MODE="true"        # Show demo mode warnings
 NEXT_PUBLIC_ENABLE_ANALYTICS="false"
+# GITHUB_PAGES=true                 # Set at build time for GitHub Pages deployment
 ```
 
 ## Project Structure
@@ -86,9 +87,11 @@ npm audit        # Security audit
 
 This project supports **dual deployment** - both Vercel and GitHub Pages from the same codebase.
 
-### Vercel (Recommended)
+### Vercel
 
-Deployed on Vercel. Set environment variables in the Vercel dashboard matching `.env.local.example`.
+**Live:** [https://nothing-store.vercel.app](https://nothing-store.vercel.app)
+
+Set environment variables in the Vercel dashboard matching `.env.local.example`.
 
 ```bash
 vercel           # Deploy to preview
