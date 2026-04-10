@@ -15,7 +15,7 @@ npm install
 npm run dev
 ```
 
-Visit [http://localhost:3000](http://localhost:3000)
+Visit [https://nothing-seven-pi.vercel.app/](https://nothing-seven-pi.vercel.app/)
 
 ## Features
 
