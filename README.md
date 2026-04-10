@@ -15,7 +15,7 @@ npm install
 npm run dev
 ```
 
-Visit [https://nothing-seven-pi.vercel.app/](https://nothing-seven-pi.vercel.app/)
+Visit [https://s7ty3.com/](https://s7ty3.com/)
 
 ## Features
 
