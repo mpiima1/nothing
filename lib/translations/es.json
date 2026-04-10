@@ -1,0 +1,92 @@
+{
+  "common": {
+    "addToCart": "Agregar al Carrito",
+    "addedToCart": "Agregado al Carrito",
+    "cart": "Carrito",
+    "checkout": "Pagar",
+    "back": "Volver",
+    "backToStore": "Volver a la Tienda",
+    "processing": "Procesando...",
+    "complete": "Completar",
+    "total": "Total",
+    "verified": "Verificado",
+    "authentic": "Auténtico",
+    "purchased": "Comprado",
+    "value": "Valor",
+    "orderNumber": "Pedido #",
+    "items": "artículo(s)",
+    "each": "cada uno"
+  },
+  "hero": {
+    "title": "Compra Absolutamente Nada",
+    "subtitle": "La plataforma de comercio electrónico revolucionaria que vende lo que nunca supiste que necesitabas.",
+    "tagline": "Nada Premium. Entregado.",
+    "description": "Esto no es una estafa. Esto es arte performático. Esto es comentario social. Esta es tu oportunidad de poseer una pieza de absurdo conceptual. 100% transparente. 100% nada."
+  },
+  "products": {
+    "salesCounter": "{{count}} Nadas Vendidos Hoy",
+    "chooseYourNothing": "Elige Tu Nada",
+    "premium": {
+      "name": "Nada Premium",
+      "description": "Nuestro producto estrella. Absolutamente nada, pero hazlo premium.",
+      "features": ["100% invisible", "Cero calorías", "Vida útil infinita", "Hipoalergénico"]
+    },
+    "deluxe": {
+      "name": "Nada Deluxe",
+      "description": "Nada, pero más elegante. Para el consumidor exigente.",
+      "features": ["Vacío artesanal", "Vacío hecho a mano", "Edición limitada", "Certificado de autenticidad"]
+    },
+    "ultimate": {
+      "name": "Nada Ultimate",
+      "description": "El ápice de la nada. Ausencia pura en su forma final.",
+      "features": ["Vacío de grado cuántico", "Implicaciones filosóficas incluidas", "Experiencia VIP de nada", "Sesión fotográfica personalizada"]
+    },
+    "starter": {
+      "name": "Nada Starter",
+      "description": "Perfecto para principiantes en la nada. Sumérgete en el vacío.",
+      "features": ["Vacío de nivel básico", "Certificado digital", "Digno de Instagram", "Excelente iniciador de conversaciones"]
+    },
+    "limitedStock": "Stock limitado: ∞"
+  },
+  "cart": {
+    "title": "Tu Carrito",
+    "empty": "Tu carrito está tan vacío como tu compra",
+    "emptySubtext": "Agrega algo de nada para comenzar",
+    "checkoutYourNothing": "Pagar Tu Nada",
+    "noPaymentRequired": "No se requiere pago. Nada detectado."
+  },
+  "checkout": {
+    "title": "Pagar",
+    "yourNothing": "Tu Nada",
+    "fullName": "Nombre Completo",
+    "namePlaceholder": "Juan Pérez",
+    "email": "Correo Electrónico",
+    "emailPlaceholder": "juan@ejemplo.com",
+    "disclaimer": "Al continuar, reconoces que estás literalmente comprando NADA. No se entregarán productos físicos o digitales excepto un certificado y documentación fotográfica. Esto es arte performático / experimento social. Todas las ventas son finales porque... bueno, no hay nada que devolver.",
+    "disclaimerTitle": "Aviso Legal",
+    "completePurchase": "Completar Compra de Nada"
+  },
+  "certificate": {
+    "congratulations": "¡Felicitaciones!",
+    "purchased": "Has comprado absolutamente nada",
+    "download": "Descargar Certificado PDF",
+    "downloaded": "¡Certificado Descargado!",
+    "downloadHint": "Descarga tu prueba oficial de compra. Incluye [ NOTHING CAPTURED ].",
+    "printedHint": "Tu certificado está listo. Imprímelo en papel transparente para mayor autenticidad.",
+    "orderSummary": "Resumen del Pedido",
+    "purchasedBy": "Comprado por",
+    "emailLabel": "Correo"
+  },
+  "footer": {
+    "tagline": "Nothing Store - Un audaz experimento en capitalismo absurdo",
+    "legal": "Todas las compras son no reembolsables (obviamente). Estás literalmente comprando nada. Esto es 100% transparente. Las ganancias financiarán la próxima gran idea del creador. Gracias por ser parte de algo bellamente significativo.",
+    "copyright": "© 2024 Nothing Store. Todos los derechos (sobre nada) reservados."
+  },
+  "photos": {
+    "packaging": "Tu Nada siendo cuidadosamente empacado",
+    "qualityControl": "Inspección de calidad de Tu Nada",
+    "facility": "Tu Nada en nuestra instalación de última generación",
+    "shipping": "Preparativos finales antes de enviar Tu Nada",
+    "security": "Tu Nada pasando por seguridad"
+  }
+}

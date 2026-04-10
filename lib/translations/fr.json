@@ -1,0 +1,92 @@
+{
+  "common": {
+    "addToCart": "Ajouter au Panier",
+    "addedToCart": "Ajouté au Panier",
+    "cart": "Panier",
+    "checkout": "Paiement",
+    "back": "Retour",
+    "backToStore": "Retour à la Boutique",
+    "processing": "Traitement...",
+    "complete": "Terminer",
+    "total": "Total",
+    "verified": "Vérifié",
+    "authentic": "Authentique",
+    "purchased": "Acheté",
+    "value": "Valeur",
+    "orderNumber": "Commande #",
+    "items": "article(s)",
+    "each": "chaque"
+  },
+  "hero": {
+    "title": "Achetez Absolument Rien",
+    "subtitle": "La plateforme e-commerce révolutionnaire qui vend ce dont vous n'aviez jamais eu besoin.",
+    "tagline": "Rien Premium. Livré.",
+    "description": "Ce n'est pas une arnaque. C'est de l'art performance. C'est un commentaire social. C'est votre chance de posséder une pièce d'absurdité conceptuelle. 100% transparent. 100% rien."
+  },
+  "products": {
+    "salesCounter": "{{count}} Riends Vendus Aujourd'hui",
+    "chooseYourNothing": "Choisissez Votre Rien",
+    "premium": {
+      "name": "Rien Premium",
+      "description": "Notre produit phare. Absolument rien, mais en version premium.",
+      "features": ["100% invisible", "Zéro calorie", "Durée de vie infinie", "Hypoallergénique"]
+    },
+    "deluxe": {
+      "name": "Rien Deluxe",
+      "description": "Rien, mais plus chic. Pour le consommateur exigeant.",
+      "features": ["Vide artisanal", "Néant fait main", "Édition limitée", "Certificat d'authenticité"]
+    },
+    "ultimate": {
+      "name": "Rien Ultimate",
+      "description": "L'apex du néant. Absence pure sous sa forme finale.",
+      "features": ["Vide de qualité quantique", "Implications philosophiques incluses", "Expérience rien VIP", "Séance photo personnalisée"]
+    },
+    "starter": {
+      "name": "Rien Starter",
+      "description": "Parfait pour les débutants en rien. Plongez dans le vide.",
+      "features": ["Vide d'entrée de gamme", "Certificat numérique", "Digne d'Instagram", "Excellent sujet de conversation"]
+    },
+    "limitedStock": "Stock limité : ∞"
+  },
+  "cart": {
+    "title": "Votre Panier",
+    "empty": "Votre panier est aussi vide que votre achat",
+    "emptySubtext": "Ajoutez du rien pour commencer",
+    "checkoutYourNothing": "Payer Votre Rien",
+    "noPaymentRequired": "Aucun paiement requis. Rien détecté."
+  },
+  "checkout": {
+    "title": "Paiement",
+    "yourNothing": "Votre Rien",
+    "fullName": "Nom Complet",
+    "namePlaceholder": "Jean Dupont",
+    "email": "E-mail",
+    "emailPlaceholder": "jean@exemple.com",
+    "disclaimer": "En continuant, vous reconnaissez que vous achetez littéralement RIEN. Aucun produit physique ou numérique ne sera livré sauf un certificat et une documentation photographique. C'est de l'art performance / expérience sociale. Tous les ventes sont définitives car... eh bien, il n'y a rien à retourner.",
+    "disclaimerTitle": "Avertissement Légal",
+    "completePurchase": "Compléter l'Achat de Rien"
+  },
+  "certificate": {
+    "congratulations": "Félicitations !",
+    "purchased": "Vous avez acheté absolument rien",
+    "download": "Télécharger le Certificat PDF",
+    "downloaded": "Certificat Téléchargé !",
+    "downloadHint": "Téléchargez votre preuve d'achat officielle. Inclut [ NOTHING CAPTURED ].",
+    "printedHint": "Votre certificat est prêt. Imprimez-le sur du papier transparent pour l'authenticité.",
+    "orderSummary": "Résumé de la Commande",
+    "purchasedBy": "Acheté par",
+    "emailLabel": "E-mail"
+  },
+  "footer": {
+    "tagline": "Nothing Store - Une expérience audacieuse de capitalisme absurde",
+    "legal": "Tous les achats sont non remboursables (évidemment). Vous achetez littéralement rien. C'est 100% transparent. Les bénéfices financeront la prochaine grande idée du créateur. Merci de faire partie de quelque chose de magnifiquement insignifiant.",
+    "copyright": "© 2024 Nothing Store. Tous droits (sur rien) réservés."
+  },
+  "photos": {
+    "packaging": "Votre Rien soigneusement emballé",
+    "qualityControl": "Contrôle qualité de votre Rien",
+    "facility": "Votre Rien dans notre installation de pointe",
+    "shipping": "Dernières préparations avant l'expédition de votre Rien",
+    "security": "Votre Rien passant par la sécurité"
+  }
+}

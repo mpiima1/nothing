@@ -1,0 +1,92 @@
+{
+  "common": {
+    "addToCart": "Ongeza Kapuni",
+    "addedToCart": "Imeongezwa Kapuni",
+    "cart": "Kapuni",
+    "checkout": "Malipo",
+    "back": "Rudi",
+    "backToStore": "Rudi Dukani",
+    "processing": "Inachakata...",
+    "complete": "Mwisho",
+    "total": "Jumla",
+    "verified": "Ithibitishwa",
+    "authentic": "Halisi",
+    "purchased": "Ilinunuliwa",
+    "value": "Thamani",
+    "orderNumber": "Oda #",
+    "items": "kipande",
+    "each": "kila moja"
+  },
+  "hero": {
+    "title": "Nunua Hakuna Kitu Kabisa",
+    "subtitle": "Jukwaa jipya la biashara dragheni linachourekebisha utendakazi usio na maana.",
+    "tagline": "Hakuna Kitu Bora. Imewasilishwa.",
+    "description": "Hii si骗局. Hii ni usanifu wa kiakili. Hii ni maoni ya kijamii. Hii ni nafasi yako ya kumiliki kitu cha ubatilifu wa kiutendaji. 100% wazi. 100% hakuna kitu."
+  },
+  "products": {
+    "salesCounter": "{{count}} Hakuna Kitu Zinazouzwa Leo",
+    "chooseYourNothing": "Chagua Hakuna Kitu Yako",
+    "premium": {
+      "name": "Hakuna Kitu Premium",
+      "description": "Bidhaa yetu kuu. Hakuna kitu kabisa, lakini fanya iwe premium.",
+      "features": ["100% haionekani", "Kalori sifuri", "Maisha bila mwisho", "Isiyosababisha mizio"]
+    },
+    "deluxe": {
+      "name": "Hakuna Kitu Deluxe",
+      "description": "Hakuna kitu, lakini ni ghali zaidi. Kwa mteja mwenye umakini.",
+      "features": ["Tofauti ya kisanii", "Tupu iliyoundwa kwa mkono", "Toleo la kipekee", "Cheti cha ubora"]
+    },
+    "ultimate": {
+      "name": "Hakuna Kitu Ultimate",
+      "description": "Kilele cha kutokuwa na kitu. Ukosefu safi katika umbo lake la mwisho.",
+      "features": ["Tapeko la ubora wa quantum", "Maana ya falsafa zimejumuishwa", "Matekemezi ya VIP hakuna kitu", "Picha ya kibinafsi"]
+    },
+    "starter": {
+      "name": "Hakuna Kitu Starter",
+      "description": "Bora kwa wanaoanza na hakuna kitu. Jishuhi na tupu.",
+      "features": ["Tupu ya kiwango cha kuingia", "Cheti cha kidijitali", "Inafaa Instagram", "Mwanzilishi mzuri wa mazungumzo"]
+    },
+    "limitedStock": "Hisa fedi: ∞"
+  },
+  "cart": {
+    "title": "Kapuni Yako",
+    "empty": "Kapuni yako ni tupu kama ununuzi wako",
+    "emptySubtext": "Ongeza tupu ili uanze",
+    "checkoutYourNothing": "Malipo ya Hakuna Kitu Yako",
+    "noPaymentRequired": "Hakuna malipo yahitajika. Tupu imegunduliwa."
+  },
+  "checkout": {
+    "title": "Malipo",
+    "yourNothing": "Hakuna Kitu Yako",
+    "fullName": "Jina Kamili",
+    "namePlaceholder": "Juma Omari",
+    "email": "Barua Pepe",
+    "emailPlaceholder": "juma@mfano.co.tz",
+    "disclaimer": "Kwa kuendelea, unakubali kuwa una nunua NOTHING kwa kweli. Hakuna bidhaa za kimwili au kidijitali zitakazotolewa isipokuwa cheti na hati ya picha. Hii ni usanifu wa kiakili / jaribio la kijamii. Mauzo yote ni ya mwisho kwa sababu... well, hakuna kitu cha kurudisha.",
+    "disclaimerTitle": "Kanuni za Kisheria",
+    "completePurchase": "Maliza Ununuzi wa Hakuna Kitu"
+  },
+  "certificate": {
+    "congratulations": "Hongera!",
+    "purchased": "Umefnunua hakuna kitu kabisa",
+    "download": "Pakua Cheti cha PDF",
+    "downloaded": "Cheti Kilipakuliwa!",
+    "downloadHint": "Pakua hati yako rasmi ya ununuzi. Inajumuisha [ NOTHING CAPTURED ].",
+    "printedHint": "Cheti chako kiko tayari. Chapa kwenye karatasi ya wazi kwa ubora.",
+    "orderSummary": "Muhtasari wa Oda",
+    "purchasedBy": "Alinunua",
+    "emailLabel": "Barua Pepe"
+  },
+  "footer": {
+    "tagline": "Nothing Store - Jaribio la kudanganya katika ubatilifu wa kiuchumi",
+    "legal": "Manunuzi yote hayarudishiwi (wa kuamini). Una nunua tupu kwa kweli. Hii ni 100% wazi. Pesa zitaendesha wazo jipya la mmiliki. Asante kwa kuwa sehemu ya kitu fulani chenye kusisimua bila maana.",
+    "copyright": "© 2024 Nothing Store. Haki zote (za tupu) zimehifadhiwa."
+  },
+  "photos": {
+    "packaging": "Hakuna Kitu yako ikandamiwa kwa uangalifu",
+    "qualityControl": "Ukaguzi wa ubora wa Hakuna Kitu yako",
+    "facility": "Hakuna Kitu yako katika kituo chetu cha kisasa",
+    "shipping": "Maandalizi ya mwisho kabla ya kusafirisha Hakuna Kitu yako",
+    "security": "Hakuna Kitu yako ikipita usalama"
+  }
+}
