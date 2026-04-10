@@ -15,11 +15,22 @@ import { supportedLanguages, changeLanguage, getCurrentLanguage } from '../lib/i
 export default function LanguageSelector() {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
-  const [currentLang, setCurrentLang] = useState(supportedLanguages[0]);
+  const [currentLang, setCurrentLang] = useState(null);
+  const [mounted, setMounted] = useState(false);
   const dropdownRef = useRef(null);
 
   useEffect(() => {
-    setCurrentLang(getCurrentLanguage());
+    setMounted(true);
+    const stored = localStorage.getItem('nothing-store-lang');
+    const hash = window.location.hash;
+    let langCode = stored || 'en';
+    if (hash && hash.startsWith('#/')) {
+      const hashLang = hash.slice(2);
+      if (supportedLanguages.some(l => l.code === hashLang)) {
+        langCode = hashLang;
+      }
+    }
+    setCurrentLang(supportedLanguages.find(l => l.code === langCode) || supportedLanguages[0]);
     
     const handleHashChange = () => {
       const hash = window.location.hash;
@@ -51,6 +62,8 @@ export default function LanguageSelector() {
     setIsOpen(false);
   };
 
+  const activeLang = mounted && currentLang ? currentLang : supportedLanguages[0];
+
   return (
     <div className="relative" ref={dropdownRef}>
       <button
@@ -58,7 +71,7 @@ export default function LanguageSelector() {
         className="flex items-center gap-2 px-3 py-2 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-lg border border-white/20 transition-all duration-200 text-sm font-medium"
       >
         <Globe size={16} className="text-purple-300" />
-        <span>{currentLang.flag} {currentLang.code.toUpperCase()}</span>
+        <span>{activeLang.flag} {activeLang.code.toUpperCase()}</span>
         <ChevronDown 
           size={14} 
           className={`text-gray-400 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
@@ -72,14 +85,14 @@ export default function LanguageSelector() {
               key={lang.code}
               onClick={() => handleSelect(lang)}
               className={`w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-white/10 transition-colors ${
-                currentLang.code === lang.code ? 'bg-purple-500/20' : ''
+                activeLang.code === lang.code ? 'bg-purple-500/20' : ''
               }`}
             >
               <span className="text-lg">{lang.flag}</span>
-              <span className={currentLang.code === lang.code ? 'text-purple-300 font-semibold' : 'text-white'}>
+              <span className={activeLang.code === lang.code ? 'text-purple-300 font-semibold' : 'text-white'}>
                 {lang.name}
               </span>
-              {currentLang.code === lang.code && (
+              {activeLang.code === lang.code && (
                 <span className="ml-auto text-purple-400">✓</span>
               )}
             </button>
