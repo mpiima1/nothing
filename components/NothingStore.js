@@ -203,28 +203,53 @@ export default function NothingStore() {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
       {/* Header */}
       <header className="border-b border-white/10 backdrop-blur-lg sticky top-0 z-50 bg-slate-900/50">
-        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-8 py-3 md:py-6 flex justify-between items-center gap-2 md:gap-4">
-          <div className="flex flex-wrap items-center gap-2 md:gap-4">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-8 py-3 md:py-6 flex justify-between items-center">
+          {/* Mobile: Language + Currency | Desktop: Left column - same height as cart */}
+          <div className="flex items-center gap-2">
             <LanguageSelector />
             <CurrencySelector onCurrencyChange={handleCurrencyChange} />
-            <div className="hidden sm:block">
-              <h1 className="text-2xl md:text-3xl font-bold">{t('hero.tagline')}</h1>
+          </div>
+
+          {/* Desktop: Center title (hidden on mobile) - text left-aligned */}
+          <div className="hidden lg:flex justify-center absolute left-1/2 transform -translate-x-1/2" style={{ left: '50%' }}>
+            <div className="text-left">
+              <h1 className="text-2xl lg:text-3xl font-bold">{t('hero.tagline')}</h1>
               <p className="text-sm text-gray-400">Nothing Store</p>
             </div>
           </div>
-          <EnhancedButton
-            variant="primary"
-            onClick={() => setIsCartOpen(true)}
-            className="relative"
-          >
-            <ShoppingCart size={20} />
-            <span className="hidden sm:inline">{t('common.cart')} ({cart.length})</span>
-            {cart.length > 0 && (
-              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-6 h-6 flex items-center justify-center">
-                {cart.length}
-              </span>
-            )}
-          </EnhancedButton>
+
+          {/* Cart button */}
+          <div className="flex items-center gap-2">
+            <div className="sm:hidden">
+              <EnhancedButton
+                variant="primary"
+                onClick={() => setIsCartOpen(true)}
+                className="relative !py-1.5 !px-2"
+              >
+                <ShoppingCart size={16} />
+                {cart.length > 0 && (
+                  <span className="absolute -top-1.5 -right-1.5 bg-red-500 text-white text-[10px] rounded-full w-4 h-4 flex items-center justify-center">
+                    {cart.length}
+                  </span>
+                )}
+              </EnhancedButton>
+            </div>
+            <div className="hidden sm:block">
+              <EnhancedButton
+                variant="primary"
+                onClick={() => setIsCartOpen(true)}
+                className="relative"
+              >
+                <ShoppingCart size={20} />
+                <span>{t('common.cart')} ({cart.length})</span>
+                {cart.length > 0 && (
+                  <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-6 h-6 flex items-center justify-center">
+                    {cart.length}
+                  </span>
+                )}
+              </EnhancedButton>
+            </div>
+          </div>
         </div>
       </header>
 

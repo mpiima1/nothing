@@ -58,7 +58,7 @@ export default function CurrencySelector({ onCurrencyChange }) {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-1 px-2 py-1.5 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-lg border border-white/20 transition-all duration-200 text-sm font-medium"
+        className="flex items-center gap-1 px-2 py-1.5 md:py-3 md:px-3 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-lg border border-white/20 transition-all duration-200 text-sm md:text-base font-medium"
       >
         <DollarSign size={14} className="text-green-400" />
         <span>{activeCurrency.code}</span>
