@@ -23,6 +23,7 @@ import CartDrawer from './CartDrawer';
 import EnhancedButton from './EnhancedButton';
 import Certificate from './Certificate';
 import LanguageSelector from './LanguageSelector';
+import { syncLanguage } from '../lib/i18n';
 import '../lib/i18n';
 
 const currencies = getCurrencies();
@@ -63,6 +64,7 @@ export default function NothingStore() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    syncLanguage();
     setSalesCount(PRIMES_100_TO_2000[Math.floor(Math.random() * PRIMES_100_TO_2000.length)]);
     setMounted(true);
   }, []);
