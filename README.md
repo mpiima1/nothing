@@ -17,13 +17,16 @@ npm run dev
 
 Visit [https://s7ty3.com/](https://s7ty3.com/)
 
+![Landing Page](https://raw.githubusercontent.com/mpiima1/nothing/main/public/landing.png)
+
 ## Features
 
 - **Premium Nothing**: Four tiers of artisanal emptiness (Premium, Deluxe, Ultimate, Start)
 - **Multi-Currency**: USD, EUR, GBP, JPY support
 - **Cart System**: Full shopping cart with add/remove functionality
 - **PDF Certificates**: Downloadable authenticity certificates for your Nothing
-- **Animated Void**: Subtle shader-like background effects
+
+![Certificate Preview](https://raw.githubusercontent.com/mpiima1/nothing/main/public/certificate.png)
 - **Random Prime Counter**: "Nothings Sold Today" uses a random prime between 100-2000 (computed fresh on each page load)
 
 ## Environment Variables
