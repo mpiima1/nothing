@@ -100,10 +100,12 @@ NEXT_PUBLIC_PRODUCT_VARIANTS="premium,deluxe,ultimate,start"
 
 ### Optional
 ```env
-NEXT_PUBLIC_SALES_TODAY="42"         # Simulated sales counter
 NEXT_PUBLIC_DEMO_MODE="true"          # Show demo mode warnings
 NEXT_PUBLIC_ENABLE_ANALYTICS="false"  # Disable analytics
 ```
+
+### Deprecated
+- `NEXT_PUBLIC_SALES_TODAY` — REMOVED: Sales counter now auto-generates a random prime (100-2000) on each page load
 
 **Template:** `.env.local.example` must document all variables.
 
