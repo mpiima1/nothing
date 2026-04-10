@@ -203,12 +203,12 @@ export default function NothingStore() {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
       {/* Header */}
       <header className="border-b border-white/10 backdrop-blur-lg sticky top-0 z-50 bg-slate-900/50">
-        <div className="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
-          <div className="flex items-center gap-4">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-8 py-3 md:py-6 flex justify-between items-center gap-2 md:gap-4">
+          <div className="flex flex-wrap items-center gap-2 md:gap-4">
             <LanguageSelector />
             <CurrencySelector onCurrencyChange={handleCurrencyChange} />
-            <div>
-              <h1 className="text-3xl font-bold">{t('hero.tagline')}</h1>
+            <div className="hidden sm:block">
+              <h1 className="text-2xl md:text-3xl font-bold">{t('hero.tagline')}</h1>
               <p className="text-sm text-gray-400">Nothing Store</p>
             </div>
           </div>
@@ -218,7 +218,7 @@ export default function NothingStore() {
             className="relative"
           >
             <ShoppingCart size={20} />
-            <span>{t('common.cart')} ({cart.length})</span>
+            <span className="hidden sm:inline">{t('common.cart')} ({cart.length})</span>
             {cart.length > 0 && (
               <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-6 h-6 flex items-center justify-center">
                 {cart.length}
@@ -229,14 +229,14 @@ export default function NothingStore() {
       </header>
 
       {/* Hero */}
-      <section className="max-w-7xl mx-auto px-8 py-20 text-center">
-        <h2 className="text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+      <section className="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-20 text-center">
+        <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
           {t('hero.title')}
         </h2>
-        <p className="text-2xl text-gray-300 mb-4">
+        <p className="text-lg md:text-2xl text-gray-300 mb-3 md:mb-4">
           {t('hero.subtitle')}
         </p>
-        <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+        <p className="text-sm md:text-lg text-gray-400 max-w-2xl mx-auto">
           {t('hero.description')}
         </p>
       </section>
@@ -253,9 +253,9 @@ export default function NothingStore() {
       )}
 
       {/* Products */}
-      <section className="max-w-7xl mx-auto px-8 pb-20">
-        <h3 className="text-3xl font-bold mb-12 text-center">{t('products.chooseYourNothing')}</h3>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <section className="max-w-7xl mx-auto px-4 md:px-8 pb-12 md:pb-20">
+        <h3 className="text-2xl md:text-3xl font-bold mb-8 md:mb-12 text-center">{t('products.chooseYourNothing')}</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
           {products.map((product) => (
             <ProductCard
               key={product.id}
