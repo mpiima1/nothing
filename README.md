@@ -26,7 +26,10 @@ Visit [https://s7ty3.com/](https://s7ty3.com/)
 - **Cart System**: Full shopping cart with add/remove functionality
 - **PDF Certificates**: Downloadable authenticity certificates for your Nothing
 
-![Certificate Preview](https://raw.githubusercontent.com/mpiima1/nothing/main/public/certificate.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mpiima1/nothing/main/public/certificate.png" alt="Certificate Preview" width="500"/>
+</p>
+
 - **Random Prime Counter**: "Nothings Sold Today" uses a random prime between 100-2000 (computed fresh on each page load)
 
 ## Environment Variables
