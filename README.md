@@ -15,7 +15,7 @@ npm install
 npm run dev
 ```
 
-Visit [https://s7ty3.com/](https://nothing.s7ty3.com/)
+Visit [https://nothing.s7ty3.com/](https://nothing.s7ty3.com/)
 
 ![Landing Page](https://raw.githubusercontent.com/mpiima1/nothing/main/public/landing.png)
 
