@@ -90,7 +90,7 @@ This project supports **dual deployment** - both Vercel and GitHub Pages from th
 
 ### Vercel
 
-**Live:** [https://nothing-store.vercel.app](https://nothing-store.vercel.app)
+**Live:** [https://nothing.s7ty3.com/](https://nothing.s7ty3.com/)
 
 Set environment variables in the Vercel dashboard matching `.env.local.example`.
 
